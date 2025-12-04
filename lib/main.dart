@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'dynamic_widget_page.dart'; // import your stateful widget page
+import 'package:todolist5/widgets/NoteWidget.dart';
 
 void main() {
-  runApp(const MyApp()); // Entry point
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Acitivty Tab',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const DynamicWidgetPage(), // The page with add/remove widgets
+      home: Scaffold(
+        appBar: AppBar(centerTitle: true, title: Text("Todo list")),
+        body: NoteWidget(),
+        // backgroundColor: const Color.fromARGB(255, 255, 25, 25),
+      ),
     );
   }
 }
-
-// I apologize sir, absent ko sa last lesson maoy deli complete akoa code po.

@@ -1,6 +1,6 @@
 {
-    "name": "statefull_activity",
-    "short_name": "statefull_activity",
+    "name": "todolist5",
+    "short_name": "todolist5",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
